@@ -10939,7 +10939,7 @@ hr.divider-light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, #212529 0%, #212529 100%);
+  background: linear-gradient(to bottom, #212529 0%, #212529 100%), url("../assets/img/me.PNG") ;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11002,4 +11002,41 @@ header.masthead h1, header.masthead .h1 {
 }
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xxl .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
+}
+
+.s-cont {
+  box-shadow: rgb(239 239 239) 0px 24px 48px;
+  padding: 1rem 1rem 0rem 1rem;
+  height: 100%;
+}
+
+.s-cont .mt-5 {
+  margin: 3rem 0!important;
+}
+
+.s-cont:hover {
+  background-color: transparent;
+  background-image: linear-gradient(to bottom, rgb(173 173 173 / 20%) 0%, rgba(125, 185, 232, 0) 100%);
+  background-repeat: repeat;
+  animation-name: fadeInUp;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  cursor: pointer;
 }
